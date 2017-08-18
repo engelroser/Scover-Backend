@@ -1,0 +1,29 @@
+{
+	"port": 8080,
+	"bodyLimit": "50000kb",
+	"corsHeaders": ["Link", "x-total-count"],
+	"jwtSecret": "Sc0v3rS3cr3tK3Y",
+	"jwtSession": {
+		"session": false
+	},
+	"googleAPIKey":"AIzaSyALYIyQd7ylJCtPwTVHw-Ifqrz5NI-KoTI",
+	"googleAPIPhotoUrl":"https://maps.googleapis.com/maps/api/place/photo?maxheight=500&key=AIzaSyALYIyQd7ylJCtPwTVHw-Ifqrz5NI-KoTI&photoreference=",
+	"mail": {
+	  "from": "scover.rh@yandex.com",
+	  "host": "smtp.yandex.ru",
+	  "secureConnection": true,
+	  "port": 465,
+	  "transportMethod": "SMTP",
+	  "auth": {
+	    "user": "scover.rh@ya.ru",
+	    "pass": "scover"
+	  }
+	},
+	"s3": {
+	  "region": "us-east-2",
+	  "bucket": "scover-app",
+	  "accessKeyId": "AKIAJFC2R2DWVWAYQF2Q",
+	  "secretAccessKey": "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",
+		"prefix": "uploads"
+	}
+}
