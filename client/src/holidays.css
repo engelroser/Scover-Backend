@@ -1,0 +1,183 @@
+.weeksBig .week {
+    vertical-align: top;
+  display: inline-block;
+  padding: 0px 10px;
+  width: 180px;
+  font-family: Roboto, sans-serif;
+  margin: 0px 0px 10px 10px;
+}
+.weeksBig div.week {
+  cursor:pointer;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+}
+.weeksBig div.week:active {
+  background-color: rgba(0,0,0,0.05);
+}
+.weeksBig div.week.selected {
+  background-color: rgba(0,0,0,0.02);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 1px 4px;
+}
+.weeksBig div.week:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 6px, rgba(0, 0, 0, 0.25) 0px 2px 4px;
+}
+.weeksBig div.week.selected .name{
+  color: #ff4081;
+}
+
+.week .name {
+  padding:3px 10px;
+  font-size: 16px;
+  background-color: #e8e8e8;
+  margin-left: -10px;
+}
+.week .descr {
+  padding:2px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.week .holidays {
+  padding:2px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.weeks {
+  display: inline-block;
+  float: right;
+}
+.weeks .week {
+  margin:1px;
+  width: 110px;
+  display:block;
+  cursor:pointer;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.weeks .week:hover {
+  background-color: #ddd;
+}
+.weeks .week .name {
+  background-color: transparent;
+}
+div.week.selected {
+  color: #00bcd4;
+}
+.weeks div.week.selected span{
+  color: #00bcd4;
+}
+.pad5 {
+  padding: 5px;
+}
+table.week {
+  font-size: 14px;
+  width:100%;
+  border-collapse: collapse;
+  padding: 0;
+}
+table.week td {
+
+}
+table.week td.first {
+  padding:3px 10px;
+  color: #000;
+  background-color: #e8e8e8;
+  vertical-align: top;
+  border: 1px solid white;
+}
+table.week .caption {
+  font-size:13px;
+  color: #444;
+}
+table.week .title {
+  padding: 0 10px;
+}
+table.week tr.weekday td:not(:first-child){
+  background-color: #e8e8e8;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+table.week td.weekday {
+  border: 1px solid #f5f5f5;
+  padding:0;
+}
+table.week td.weekday .holiday {
+  padding:5px;
+  position: relative;
+}
+table.week div.upcoming {
+  margin-bottom:5px;
+}
+.tholder {
+  padding:10px;
+}
+table.week .holidaysColumn {
+  margin:0;
+  padding:0;
+  vertical-align: top;
+}
+
+table.week .recommended .holiday,
+table.week .holidaysColumn .holiday {
+  padding:5px;
+}
+table.week .recommended .holiday {
+  display: inline-block;
+}
+
+.weeksBig {
+  height:60px;
+  overflow-y: hidden;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.draggable {
+  cursor: grab;
+}
+.dropPlaceholder {
+  font-size:13px;
+  color: #777;
+  padding:10px;
+}
+.line {
+  display: inline-block;
+  vertical-align: middle;
+}
+table.week td.recommendedCell {
+  padding: 0;
+}
+.recommended button {
+  visibility: hidden;
+}
+.recommended:hover button {
+  visibility: visible;
+}
+
+.categories,
+.keywords {
+  display:inline-block;
+  vertical-align: top;
+  margin-right:30px;
+}
+.keywords {
+  position:relative;
+  margin-top: 18px;
+  padding-top:6px;
+}
+.hidden {
+  display: none;
+}
+label.greylabel {
+  color: rgba(0, 0, 0, 0.3);
+  font-size:12px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.keywords>div>label {
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 18px;
+}
